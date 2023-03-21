@@ -1,0 +1,19 @@
+.bg-main-nav{
+    background: rgb(83, 10, 110);
+}
+.btn-search{
+    background: rgb(116, 2, 147) !important;
+    border-color: rgb(147 22 193) !important;
+}
+.btn-search:hover{
+    background: rgb(179, 50, 225) !important;
+
+}
+
+.d-inline-block align-top{
+    height: 20px;
+}
+
+.me-2:active{
+    border-color: rgb(130, 47, 174);
+}

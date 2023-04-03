@@ -26,7 +26,7 @@ export default function Login() {
         <Form.Label>Password</Form.Label>
         <Form.Control type="password" placeholder="Enter your Password" />
       </Form.Group>
-      <a href='' className="">forgot password</a>
+      <a href='#' className="">forgot password</a>
       <Form.Group className="mt-2 mb-3" controlId="formBasicCheckbox">
         <Form.Check type="checkbox" label="Remember my details" />
 

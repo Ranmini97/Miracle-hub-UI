@@ -15,15 +15,28 @@ export default function Signup() {
 
         <div className='m-auto col-md-6 align-center border p-3 bg-white'>
           <Form>
+          <Row className="mb-3">
+          <Form.Group as={Col} controlId="formGridName">
+                <Form.Label>Name</Form.Label>
+                <Form.Control type="text" placeholder="Enter your name" />
+              </Form.Group>
+
+              <Form.Group as={Col} controlId="formGridState">
+                <Form.Label >Mobile</Form.Label>
+                <Form.Control placeholder="+94XXXXXXXX" type='tel' defaultValue="">
+                </Form.Control>
+              </Form.Group>
+          </Row>
+
             <Row className="mb-3">
               <Form.Group as={Col} controlId="formGridEmail">
                 <Form.Label>Email</Form.Label>
-                <Form.Control type="email" placeholder="Enter email" />
+                <Form.Control type="email" placeholder="Enter your email" />
               </Form.Group>
 
               <Form.Group as={Col} controlId="formGridPassword">
                 <Form.Label>Password</Form.Label>
-                <Form.Control type="password" placeholder="Password" />
+                <Form.Control type="password" placeholder="Enter a strong password" />
               </Form.Group>
             </Row>
 
@@ -99,11 +112,7 @@ export default function Signup() {
                 </Col>
              </Form.Group>
 
-            <Form.Group as={Col} controlId="formGridState">
-                <Form.Label >Mobile</Form.Label>
-                <Form.Control placeholder="+94XXXXXXXXX" type='tel' defaultValue="">
-                </Form.Control>
-              </Form.Group>
+            
             </Row>
 
             <Form.Group className="mb-3" id="formGridCheckbox">

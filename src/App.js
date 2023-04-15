@@ -12,6 +12,7 @@ import Login from './Pages/Login.js';
 import Signup from './Pages/Signup.js';
 import Item from './Pages/Item.js';
 import Mysterybox from './Pages/Mysterybox.js';
+import Success from './Pages/Success';
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
           <Route path="/Login" element= {<Login/>} />
           <Route path="/Signup" element= {<Signup/>} />
           <Route path="/Dashboard" element= {<Dashboard/>} />
+          <Route path="/Success" element= {<Success/>} />
           <Route path="/Item" element= {<Item/>} />
           <Route path="/Mysterybox" element= {<Mysterybox/>} />
         </Routes>

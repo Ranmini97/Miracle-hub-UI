@@ -16,8 +16,9 @@
 }
 .top-fix{
   margin-top: 90px;
-  background-color: #ededed87;
+  background-color:  #f8f9fa;
 }
+/* #ededed87 */
 .App-header {
   background-color: #282c34;
   min-height: 100vh;

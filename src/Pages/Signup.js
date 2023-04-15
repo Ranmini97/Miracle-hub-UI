@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import {Link } from 'react-router-dom';
+import {Link, useNavigate } from 'react-router-dom';
 import Button from 'react-bootstrap/Button';
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
@@ -9,6 +9,8 @@ import fb from '../Images/fb.png';
 import axios from 'axios';
 
 export default function Signup() {
+
+  let navigate = useNavigate ()
 
   const [user,setUser]=useState({
     c_name:"",
@@ -29,6 +31,7 @@ export default function Signup() {
   const onSubmit=async(e) => {
       e.preventDefault();
       await axios.post("http://localhost:8080/api/v1/customer/saveCustomer",user)
+      navigate("/Success");
   }
 
   return (
@@ -81,25 +84,15 @@ export default function Signup() {
             </Form.Group>
 
             <Form.Group as={Col} className=" row mb-3 ms-3">
-             <Form.Label as="legend" column sm={4} className="mt-0 border-1">
+              <Form.Label as="legend" column sm={4} className="mt-0 border-1">
                 Gender
-                {/* <label>
-                  <input type="radio" value="male" neme="gender" onChange={(e)=>onInputChange(e)} />
-                  Male
-                </label>
+              </Form.Label>
 
-                <label>
-                  <input type="radio" value="female" neme="gender" onChange={(e)=>onInputChange(e)} />
-                  Female
-                </label> */}
-
-                </Form.Label>
-
-                <Col sm={8} className="mt-2" >
+              <Col sm={8} className="mt-2" >
                   <Form.Check type="radio" label="Male" id="m" name="gender" value="M"  Value={gender} onChange={(e)=>onInputChange(e)}/>
                   <Form.Check type="radio" label="Female" id="f" name="gender" value="F"  Value={gender} onChange={(e)=>onInputChange(e)}/>
                   <Form.Check type="radio" label="Other" id="o" name="gender" value="O"  Value={gender} onChange={(e)=>onInputChange(e)}/>
-                </Col>
+              </Col>
 
              </Form.Group>
 
@@ -111,8 +104,8 @@ export default function Signup() {
             </Form.Group>
 
             <div className="d-grid gap-2 col-6 mx-auto">
-               <Button variant="primary" type="submit" >
-                 <Link to='/Success' className='btn text-white'>Create My Miracle Account</Link>
+               <Button variant="primary" type="submit" className='btn text-white'>Create My Miracle Account
+                 {/* <Link to='/Success' className='btn text-white'>Create My Miracle Account</Link> */}
                </Button>
             </div>
             <hr></hr>

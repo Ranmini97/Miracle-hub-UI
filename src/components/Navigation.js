@@ -30,45 +30,56 @@ export default function Navigation() {
           <Nav className="me-auto">
 
             <NavDropdown title="Categories" id="collasible-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Men Clothes</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">Women Clothes</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Shoes</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Wrist Watches</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Statues</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Celebration Cards</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Toys</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Books</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Stationaries</NavDropdown.Item>
+              <NavDropdown.Item href="#Men/3.1">Men Clothes</NavDropdown.Item>
+              <NavDropdown.Item href="#Women/3.2">Women Clothes</NavDropdown.Item>
+              <NavDropdown.Item href="#Shoes/3.3">Shoes</NavDropdown.Item>
+              <NavDropdown.Item href="#Watches/3.3">Wrist Watches</NavDropdown.Item>
+              <NavDropdown.Item href="#Statues/3.3">Statues</NavDropdown.Item>
+              <NavDropdown.Item href="#Cards/3.3">Celebration Cards</NavDropdown.Item>
+              <NavDropdown.Item href="#Toys/3.3">Toys</NavDropdown.Item>
+              <NavDropdown.Item href="#Books/3.3">Books</NavDropdown.Item>
+              <NavDropdown.Item href="#Stationaries/3.3">Stationaries</NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
+              <NavDropdown.Item href="#MYSTERY/3.4">
                 MYSTERY BOX
               </NavDropdown.Item>
             </NavDropdown>
 
             <NavDropdown title="Brands" id="collasible-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+              <NavDropdown.Item href="#Nike/3.1">Nike</NavDropdown.Item>
+              <NavDropdown.Item href="#Gucci/3.2">Gucci</NavDropdown.Item>
+              <NavDropdown.Item href="#Adidas/3.3">Adidas</NavDropdown.Item>
+              <NavDropdown.Item href="#Hermès/3.3">Hermès</NavDropdown.Item>
+              <NavDropdown.Item href="#Louis/3.3">Louis Vuitton</NavDropdown.Item>
+              <NavDropdown.Item href="#Moose/3.3">Moose</NavDropdown.Item>
+              <NavDropdown.Item href="#Odel/3.3">Odel</NavDropdown.Item>
+              <NavDropdown.Item href="#Chanel/3.3">Chanel</NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
+              <NavDropdown.Item href="#Other/3.4">
+                Other
               </NavDropdown.Item>
             </NavDropdown>
 
             <NavDropdown title="Popular" id="collasible-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
+              <NavDropdown.Item href="#T-shirts/3.1">T-shirts</NavDropdown.Item>
+              <NavDropdown.Item href="#Headphones/3.2">
+              Headphones
               </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+              <NavDropdown.Item href="#Sunglasses/3.3">Sunglasses</NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
+              <NavDropdown.Item href="#Hoodies/3.3">Hoodies</NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="#Sweets/3.3">Sweets</NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="#Backpacks/3.3">Backpacks</NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="#other/3.4">
+                Other 
               </NavDropdown.Item>
             </NavDropdown>
 
-            <Nav.Link href="#features">Special Offers</Nav.Link>
-            <Nav.Link href="#pricing">Gift Vouchers</Nav.Link>
+            <Nav.Link href="#SpecialOffers">Special Offers</Nav.Link>
+            <Nav.Link href="#GiftVouchers">Gift Vouchers</Nav.Link>
             <br></br>
 
             <Form className="d-flex ms-5">

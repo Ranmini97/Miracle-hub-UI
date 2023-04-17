@@ -104,7 +104,7 @@ export default function Signup() {
             </Form.Group>
 
             <div className="d-grid gap-2 col-6 mx-auto">
-               <Button variant="primary" type="submit" className='btn text-white'>Create My Miracle Account
+               <Button variant="primary" type="submit" >
                  <Link to='/Success' className='btn text-white'>Create My Miracle Account</Link>
                </Button>
             </div>

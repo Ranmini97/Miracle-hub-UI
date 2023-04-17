@@ -1,7 +1,8 @@
 import React from 'react'
 import Sidebar from '../Components/Sidebar';
-//import StepWizard from "react-step-wizard";
-//import Step from '../Components/Step';
+import box from '../Images/mb2.jpg';
+// import StepWizard from "react-step-wizard";
+// import Step from '../Components/Step';
 
 export default function Mysterybox() {
   return (
@@ -15,6 +16,9 @@ export default function Mysterybox() {
         <div className="col-lg-10 p-0">
             <h4 className="text-center">You are going to wrap your Mystery Box!✨🎁🤩</h4>
             <p className="text-center">there should be the mystery box - form</p>
+            <div style={{display: 'flex', justifyContent: 'center',height:'70vh' }}>
+            <img src={box} alt="mystery box"/>
+            </div>
 
             <div>
                 {/* <StepWizard>
